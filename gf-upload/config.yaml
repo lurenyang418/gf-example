@@ -1,0 +1,18 @@
+server:
+  address: ":8700"
+  logPath: "logs"
+  accessLogEnabled: true
+  accessLogPattern: "access.{Ymd}.log"
+  mode: "debug"
+
+logger:
+  path: "logs"
+  level: "all"
+  stdout: true
+  StStatus: 1
+  stack: false
+  file: "{Y-m-d}.log"
+  rotateSize: "10M"
+  rotateBackupLimit: 2
+  rotateBackupExpire: "7d"
+  rotateBackupCompress: 9
