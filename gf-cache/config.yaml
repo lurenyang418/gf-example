@@ -1,0 +1,12 @@
+server:
+  mode: "dev"
+  # cacheType: "redis"
+  # cacheType: "miniredis"
+  cacheType: "memory"
+
+
+# 如果上面配置的是 `memory`，则不需要配置下面的配置
+redis:
+  default:
+    address: "127.0.0.1:6379"
+    pass: "P123456"
