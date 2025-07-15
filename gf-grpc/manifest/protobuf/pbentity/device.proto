@@ -1,0 +1,19 @@
+// ==========================================================================
+// Code generated and maintained by GoFrame CLI tool. DO NOT EDIT.
+// ==========================================================================
+
+syntax = "proto3";
+
+package pbentity;
+
+option go_package = "gf-grpc/Users/lurenyang/go-project/gf-grpc/api/pbentity";
+
+import "google/protobuf/timestamp.proto";
+
+message Device {
+    uint32                    Id        = 1; // 主键ID
+    google.protobuf.Timestamp CreatedAt = 2; // 创建时间
+    google.protobuf.Timestamp UpdatedAt = 3; // 更新时间
+    uint64                    DeletedAt = 4; // 软删除
+    string                    Name      = 5; // 名称
+}

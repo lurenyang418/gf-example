@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package device;
+
+option go_package = "gf-grpc/api/device/v1";
+
+
+service Device{
+    rpc Register(RegisterReq) returns (RegisterResp) {}
+}
+
+message RegisterReq{
+    string name = 1;
+}
+
+message RegisterResp{
+    int64 deviceId = 1;
+}

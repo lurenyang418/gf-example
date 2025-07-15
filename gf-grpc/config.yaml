@@ -1,0 +1,27 @@
+server:
+  mode: "dev"
+
+
+grpc:
+  name: "gf-grpc"
+  address: ":58080"
+
+logger:
+  level : "all"
+  stdout: true
+
+database:
+  logger:
+    path:    "logs"
+    file: "db-{Y-m-d}.log"
+    level:   "all"
+    stdout:  true
+    rotateSize: "10M"
+    rotateBackupLimit: 2
+    rotateBackupExpire: "7d"
+    rotateBackupCompress:  9
+  default:
+    - link:  "mysql:root:123456@tcp(127.0.0.1:3306)/test?loc=Local&parseTime=true"
+      debug: true
+
+
