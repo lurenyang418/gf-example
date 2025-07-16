@@ -1,0 +1,18 @@
+server:
+  address:     ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+
+logger:
+  level : "all"
+  stdout: true
+
+redis:
+  default:
+    address: 127.0.0.1:16379
+    db: 0
+    pass: "123456"
+    idleTimeout: 600
+
+captcha:
+  expireTime: 600
